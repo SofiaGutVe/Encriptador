@@ -1,0 +1,273 @@
+*{
+    background:#a856cd;
+    font-family: "roboto";
+    margin: 0;
+}
+
+header img{
+    margin: 10px 10px 5px 10px;
+    padding-bottom: 30px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.seccion3{
+    display: none;
+}
+
+
+#text_entrada{
+    border: none;
+    width: auto;
+    height: 40vh ;
+    margin: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(6, 47, 182);
+    resize: none;
+}
+.seccion1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.advertencia{
+    display: inline-flex;
+    align-items: center;
+}
+.advertencia_img{
+    margin: 0.5em;
+}
+
+.advertencia p{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+}
+.encriptar{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 2px solid rgb(0,0,0,0.5) ;
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5) ;
+    color: white;
+    background-color:rgb(218, 55, 210);
+    border-radius: 1em;
+    margin: 0.3em;
+}
+button:hover{
+    background-color: rgb(132, 7, 99);
+}
+
+.seccion2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.desencriptar{
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 2px solid rgb(0,0,0,0.5) ;
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5) ;
+    color:black;
+    background-color:white;
+    border-radius: 1em;
+    margin: 0.3em;
+}
+
+#text_final{
+    height:33vh ;
+    width: auto;
+    margin: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(15, 62, 233);
+    resize: none;
+    padding: 12px;
+}
+
+.btncopiar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copiar{
+    margin: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 2px solid rgb(0,0,0,0.5) ;
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5) ;
+    color:black;
+    background-color:white;
+    border-radius: 1em;
+    width: 50%;
+}
+
+/*compus*/
+@media screen and (min-width:976px){
+
+    header{
+        height: 40px;
+        position: fixed;
+    }
+    .logo{
+        width: 55%;
+        margin-left: 0.5em;
+        height: 35px;;
+    }
+    main{
+        display: flex;
+        min-height: 95vh;
+        
+    }
+    #text_entrada{
+        font-size: 2.5em;
+        height: 63vh;
+        width: 60vw;
+        margin-top: 110px;
+        
+    }
+    ::placeholder { color: #0A3871; }
+    #text_entrada:focus {
+      outline: none;
+    }
+    
+    .seccion2{
+        display: flex;
+        flex-direction: column;
+        min-height: 85vh;
+        justify-content: flex-end;
+        margin-top: 13px;
+        width: 35vw;
+        margin-right: 15px;
+    }
+    #text_final{
+        background-color: rgb(182, 22, 172);
+        height: 100%;
+        border: none;
+        background-image: url(/imagenes/chica.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+
+    }
+    .botones{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+
+    }
+    .encriptar{
+        width: 25vw;
+        margin-left: 3em;
+        
+    }
+    .desencriptar{
+        width: 25vw;
+    }
+    .copiar{
+        width: 80%;
+        height: 60%;
+    }
+    footer{
+        background-color: #d3a709;
+        margin-top: auto;
+        text-align: center;
+        color: rgb(5, 5, 5);
+        font-size: 18px;
+        min-height: 2em; 
+    }
+    footer p{
+        background-color: #daabf0;
+    }
+}
+
+/*tablet1*/
+@media screen and (min-width:768px) and (min-height:768px) and (max-height:1174px){
+    #text_entrada{
+        height: 30vh;
+        
+    }
+    
+    header img{
+        margin: 20px 10px 5px 20px;
+        padding-bottom: 30px;
+    }
+    #text_final{
+        height: 30vh;
+    }
+}
+
+/*table2*/
+@media screen and (min-width:768px) and (min-height:1175px) and (max-height:1384px){
+    header img{
+        margin: 20px 10px 5px 20px;
+        padding-bottom: 30px;
+    }
+    
+    #text_entrada{
+        height: 44vh;
+        font-size: 3em;
+    }
+
+    .botones{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .encriptar{
+        flex-basis: 15em;
+        height: 3em;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+    .desencriptar{
+        flex-basis: 15em;
+        height: 3em;
+        margin-right: 1em;
+        
+    }
+    #text_final{
+        height: 18vh;
+        font-size: 2em;
+    }
+    .copiar{
+        height:2.5em;
+        width: 22em;
+        margin: auto;
+        font-size: 2em;
+    }
+}
+
+/*celular1*/
+@media screen and (max-width:375px) and (max-height:933px){
+    
+    #text_entrada{
+        margin: 0.4em;
+        height: 32vh;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+}
+
+
+
+

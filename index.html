@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/estyle.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/imagenes/Logo.png" alt="logo" >
+    </header>
+    <main>
+        <section class="seccion1">
+            <textarea  id="text_entrada" cols="30" rows="10" placeholder="Ingrese su texto aquí"></textarea>
+            <div class="advertencia">
+                <p>Solo minusculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="seccion2">
+            <textarea  id="text_final" cols="30" rows="10"></textarea>
+            <div class="btncopiar">
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> SofiaGV.  Agosto 2024</p>
+    </footer>
+    <script src="codigo_encriptador.js"></script>
+</body>
+</html>
